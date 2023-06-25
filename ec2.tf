@@ -13,14 +13,12 @@ resource "aws_instance" "MicroserviceTestServer" {
   ##keypair Name
   key_name = "TestAccount"
   
-  ##VPC  ##Subnet
+  ##VPC  ##Subnet (If you specify subnet its enough no need to specify VPC)
   subnet_id     = "subnet-0fef6a3c3e3b85ed7"
-
-
-  ##Assign Public IP
+  ##Auto Assign Public IP enabled by default
 
   ##Assign Security Group
-  
+  security_groups = ["sg-0f9f48708ec9860da"]
   tags = {
     Name = "MicroserviceTestServer"
   }
