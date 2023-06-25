@@ -1,7 +1,16 @@
 pipeline {
     agent none
-    
-    parameters { 
-       choice(name: 'ACTION', choices: ['apply','plan', 'init', 'fmt', 'validate' ]) 
-    }
+stages {
+stage('Terraform init'){
+agent { label 'JenkinsAgent-01' }
+steps{
+sh label: '',script: 'terraform init'}
+}
+ stage('Terraform fmt'){
+agent { label 'JenkinsAgent-01' }
+steps{
+sh label: '',script: 'terraform init'}
+}
+}    
+
 }
