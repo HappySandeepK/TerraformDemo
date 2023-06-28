@@ -7,7 +7,7 @@ terraform {
 }
 resource "aws_instance" "MicroserviceTestServer" {
   ami           = "ami-022e1a32d3f742bd8"
-  instance_type = "t2.micro"
+   instance_type = "t2.micro"
   ##Availability Zone
   availability_zone = "us-east-1d"
   ##keypair Name
