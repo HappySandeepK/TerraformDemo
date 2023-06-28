@@ -22,5 +22,6 @@ resource "aws_instance" "MicroserviceTestServer" {
   tags = {
     Name = "MicroserviceTestServer"
     User = "Sandeep Khandekar"
+    CreationDate="28June2023"
   }
 }
