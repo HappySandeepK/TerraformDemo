@@ -21,5 +21,6 @@ resource "aws_instance" "MicroserviceTestServer" {
   security_groups = ["sg-0f9f48708ec9860da"]
   tags = {
     Name = "MicroserviceTestServer"
+    User = "Sandeep Khandekar"
   }
 }
