@@ -25,3 +25,12 @@ resource "aws_instance" "MicroserviceTestServer" {
     CreationDate="28June2023"
   }
 }
+
+resource "aws_instance" "this" {
+metadata_options {
+"http_endpoint": "enabled",
+"http_put_response_hop_limit": 1,
+"http_tokens": "required"
+"instance_metadata_tags: "enabled"
+}
+}
