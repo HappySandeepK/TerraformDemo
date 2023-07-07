@@ -26,7 +26,7 @@ resource "aws_instance" "MicroserviceTestServer" {
   }
 }
 
-resource "aws_instance" "this" {
+resource "aws_instance" "MicroserviceTestServer" {
 metadata_options {
 "http_endpoint": "enabled",
 "http_put_response_hop_limit": 1,
