@@ -22,15 +22,6 @@ resource "aws_instance" "MicroserviceTestServer" {
   tags = {
     Name = "MicroserviceTestServer"
     User = "Sandeep Khandekar"
-    CreationDate="28June2023"
   }
 }
 
-resource "aws_instance" "MicroserviceTestServer" {
-metadata_options {
-"http_endpoint": "enabled",
-"http_put_response_hop_limit": 1,
-"http_tokens": "required"
-"instance_metadata_tags: "enabled"
-}
-}
