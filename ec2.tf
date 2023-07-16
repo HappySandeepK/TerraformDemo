@@ -1,6 +1,6 @@
 terraform {
 backend "local" {
-    path = "/var/lib/jenkins/statefile/terraform.tfstate"
+    path = "/u01/jenkins/workspace/InfrastructureCreation/terraform.tfstate"
   }
   required_providers {
     aws = {
