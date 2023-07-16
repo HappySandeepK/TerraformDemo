@@ -1,4 +1,7 @@
 terraform {
+backend "local" {
+    path = "/var/lib/jenkins/statefile/terraform.tfstate"
+  }
   required_providers {
     aws = {
       source = "hashicorp/aws"
